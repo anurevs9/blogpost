@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}MyBlog - Post Created{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h2 class="text-success mb-4">Post Created Successfully!</h2>
+                <p>Your post has been published and is now visible on the blog.</p>
+                <div class="mt-4">
+                    <a href="{% url 'dashboard' %}" class="btn btn-primary">Go to Dashboard</a>
+                    <a href="{% url 'create_post' %}" class="btn btn-outline-primary">Create Another Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

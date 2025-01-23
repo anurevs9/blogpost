@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}MyBlog - Payment{% endblock %}
+
+{% block content %}
+<div class="payment-section">
+    <h1>Complete Your Payment</h1>
+    <div class="payment-amount">₹{{ amount }}</div>
+    <button id="rzp-button" class="razorpay-button">Pay with Razorpay</button>
+</div>
+
+{% block scripts %}
+<script>
+var options = {
+    "key": "{{ key }}",
+    "amount": "{{ amount }}",
+    "currency": "INR",
+    "name": "MyBlog",
+    "description": "{{ plan_type|title }} Subscription",
+    "order_id": "{{ order_id }}",
+    "handler": function (response){
+        window.location.href = "{% url 'payment_success' %}?payment_id=" + response.razorpay_payment_id + 
+            "&order_id=" + response.razorpay_order_id + 
+            "&signature=" + response.razorpay_signature +
+            "&plan_type={{ plan_type }}";
+    },
+    "prefill": {
+        "name": "{{ request.user.username }}",
+        "email": "{{ request.user.email }}"
+    },
+    "theme": {
+        "color": "#C19B9B"
+    }
+};
+var rzp = new Razorpay(options);
+document.getElementById('rzp-button').onclick = function(e){
+    rzp.open();
+    e.preventDefault();
+}
+</script>
+{% endblock %}
+{% endblock %}

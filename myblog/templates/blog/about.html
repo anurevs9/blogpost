@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}MyBlog - About{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center mb-4">About MyBlog</h1>
+                <p class="lead">Welcome to MyBlog, your platform for sharing stories and connecting with readers.</p>
+                
+                <h2 class="mt-4">Our Mission</h2>
+                <p>We provide a space for writers to share their thoughts, experiences, and expertise with the world. Our platform is designed to make blogging accessible, enjoyable, and rewarding.</p>
+                
+                <h2 class="mt-4">Features</h2>
+                <ul>
+                    <li>Easy-to-use content editor</li>
+                    <li>Image upload capabilities</li>
+                    <li>Subscription plans for enhanced features</li>
+                    <li>Secure payment processing</li>
+                    <li>Responsive design for all devices</li>
+                </ul>
+                
+                <h2 class="mt-4">Get Started</h2>
+                <p>Join our community today and start sharing your stories with the world.</p>
+                <div class="text-center mt-4">
+                    <a href="{% url 'register' %}" class="btn btn-primary">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

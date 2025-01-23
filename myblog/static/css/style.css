@@ -1,0 +1,426 @@
+/* Header Styles */
+.navbar {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #C19B9B !important;
+}
+
+.navbar .fa-search {
+    font-size: 1.2rem;
+}
+
+/* Main Content Styles */
+body {
+    background-color: #8BC34A;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #C19B9B;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #A88B8B;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #8BC34A;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+}
+.footer-section p {
+    color: grey;
+}
+.footer-section ul li a:hover {
+    color: #C19B9B;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #C19B9B;
+    box-shadow: 0 0 0 0.2rem rgba(193, 155, 155, 0.25);
+}
+
+/* Subscription Plans Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.price-section {
+    padding: 1.5rem 0;
+}
+
+.display-4 {
+    font-weight: bold;
+    color: #333;
+}
+
+.list-unstyled li {
+    padding: 0.5rem 0;
+}
+
+.fas.fa-check {
+    color: #28a745;
+    margin-right: 0.5rem;
+}
+
+.fas.fa-times {
+    color: #dc3545;
+    margin-right: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #C19B9B;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #A88B8B;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #C19B9B;
+}
+
+/* Alert styles */
+.alert {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Payment Section */
+.payment-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.payment-amount {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.razorpay-button {
+    background-color: #C19B9B;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.razorpay-button:hover {
+    background-color: #A88B8B;
+}
+/* Login and Register Form Styles */
+.auth-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #90c17d 0%, #52944c 100%);
+    padding: 2rem 0;
+    position: relative;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.auth-title {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.form-floating {
+    margin-bottom: 1.5rem;
+}
+
+.form-floating input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.form-floating input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.form-floating label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: white;
+    opacity: 0.9;
+}
+
+.form-check {
+    margin: 1rem 0;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.auth-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.auth-links a:hover {
+    opacity: 1;
+}
+
+.auth-footer {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+/* Payment Success Styles */
+.success-container {
+    min-height: calc(100vh - 200px);
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #f0f7ed 0%, #e8f5e9 100%);
+}
+
+.success-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.success-card:hover {
+    transform: translateY(-5px);
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.success-icon i {
+    color: white;
+    font-size: 40px;
+}
+
+.subscription-details {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.subscription-details h3 {
+    color: #2E7D32;
+    margin-bottom: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.success-actions {
+    margin-top: 2rem;
+}
+
+.success-actions .btn {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.success-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .success-card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .success-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .success-icon i {
+        font-size: 30px;
+    }
+
+    .subscription-details {
+        padding: 1rem;
+    }
+
+    .success-actions .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}

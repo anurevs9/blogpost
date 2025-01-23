@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}MyBlog - Terms and Conditions{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center mb-4">Terms and Conditions</h1>
+                <p class="lead">Last updated: {% now "F d, Y" %}</p>
+
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing and using MyBlog, you accept and agree to be bound by these Terms and Conditions.</p>
+
+                <h2>2. User Accounts</h2>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Notifying us of any unauthorized use</li>
+                </ul>
+
+                <h2>3. Content Guidelines</h2>
+                <p>Users must not post content that:</p>
+                <ul>
+                    <li>Is illegal or promotes illegal activities</li>
+                    <li>Is abusive, threatening, or harassing</li>
+                    <li>Infringes on intellectual property rights</li>
+                    <li>Contains malware or harmful code</li>
+                </ul>
+
+                <h2>4. Subscription and Payments</h2>
+                <p>By subscribing to our services:</p>
+                <ul>
+                    <li>You agree to pay the fees as they become due</li>
+                    <li>Subscriptions automatically renew unless cancelled</li>
+                    <li>Refunds are handled according to our refund policy</li>
+                </ul>
+
+                <h2>5. Termination</h2>
+                <p>We reserve the right to terminate or suspend accounts that violate these terms.</p>
+
+                <h2>6. Contact</h2>
+                <p>For questions about these terms, please contact us at support@myblog.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
